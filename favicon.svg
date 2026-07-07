@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="droplet" x1="12" y1="4" x2="36" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34d6c8"/>
+      <stop offset="1" stop-color="#0e7c9b"/>
+    </linearGradient>
+  </defs>
+  <path d="M24 3C24 3 8 21 8 32a16 16 0 0 0 32 0C40 21 24 3 24 3Z" fill="url(#droplet)"/>
+  <path d="M19 27c0 4.5 3 8 8 8" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" opacity=".9"/>
+</svg>
