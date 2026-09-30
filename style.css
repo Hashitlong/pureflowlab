@@ -168,3 +168,9 @@ h1,h2,h3,h4{font-family:'Sora',sans-serif;color:var(--brand-ink);line-height:1.1
 .card-thumb img{max-height:140px;object-fit:contain}
 .card{transition:transform .15s ease,box-shadow .15s ease}
 .card:hover{transform:translateY(-3px)}
+
+.sources-box{margin:34px 0 0;padding:18px 22px;border:1px solid var(--line);border-radius:14px;background:#f7fbfc}
+.sources-box h3{margin:0 0 6px;font-size:17px}
+.sources-box p{margin:0 0 8px;font-size:14.5px;color:#4a5f6a}
+.sources-box ul{margin:0;padding-left:20px}
+.sources-box li{margin:5px 0;font-size:14.5px}

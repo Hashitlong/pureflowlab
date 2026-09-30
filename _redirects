@@ -1,3 +1,5 @@
 http://pureflowlab.com/* https://pureflowlab.com/:splat 301!
 https://www.pureflowlab.com/* https://pureflowlab.com/:splat 301!
 /index.html / 301
+/README.md  /  301!
+/check.py  /  301!
