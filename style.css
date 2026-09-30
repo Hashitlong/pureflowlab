@@ -131,3 +131,40 @@ h1,h2,h3,h4{font-family:'Sora',sans-serif;color:var(--brand-ink);line-height:1.1
  .post-head h1{font-size:29px}.page-hero h1{font-size:30px}
  .main-nav{display:none}
 }
+/* ===== Polish pass 2026-09-30 ===== */
+/* product cards: horizontal, one per row for readability */
+.pc-grid{grid-template-columns:1fr;gap:16px}
+.product-card{display:grid;grid-template-columns:190px 1fr;grid-template-rows:auto 1fr;border-radius:16px;box-shadow:0 1px 2px rgba(11,43,56,.05),0 10px 26px rgba(11,43,56,.07);transition:box-shadow .15s ease,transform .15s ease}
+.product-card:hover{box-shadow:0 14px 34px rgba(11,43,56,.12);transform:translateY(-2px)}
+.product-card .pc-badge{grid-column:1/-1;display:flex;align-items:center;gap:8px;background:linear-gradient(90deg,var(--aqua-lt),#fff);font-size:11.5px}
+.product-card .pc-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--brand)}
+.product-card .pc-imgwrap{height:auto;min-height:190px;border-right:1px solid var(--line)}
+.product-card .pc-img{max-height:160px}
+.product-card .pc-body{padding:16px 20px 18px}
+.product-card .pc-title{font-size:17.5px;margin-bottom:8px}
+.product-card .pc-desc{font-size:14.5px;line-height:1.6;color:#4a5f6a}
+.product-card .btn-buy{width:auto;align-self:flex-start;padding:11px 20px;font-size:14.5px}
+@media(max-width:640px){
+ .product-card{grid-template-columns:1fr}
+ .product-card .pc-imgwrap{border-right:0;border-bottom:1px solid var(--line);min-height:170px}
+ .product-card .btn-buy{width:100%;align-self:stretch}
+}
+/* tables: softer, cleaner */
+.post-body table{border-collapse:separate;border-spacing:0;border-radius:14px;box-shadow:0 1px 2px rgba(11,43,56,.04)}
+.post-body th{border-right:0;padding:12px 14px}
+.post-body td{border-right:0}
+.post-body tr:last-child td{border-bottom:0}
+.post-body td:first-child{font-weight:600;color:var(--brand-ink)}
+/* mobile nav: keep categories reachable */
+@media(max-width:820px){
+ .header-inner{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:6px;gap:4px}
+ .main-nav{display:flex;width:100%;overflow-x:auto;scrollbar-width:none;margin:0 -6px}
+ .main-nav::-webkit-scrollbar{display:none}
+ .main-nav a{white-space:nowrap;font-size:14px;padding:6px 11px}
+}
+/* hero brand strip label */
+.hero-trust::before{content:"Brands covered";font-family:'Sora';font-weight:600;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#8fd3cc;align-self:center;margin-right:4px}
+/* cards: consistent thumbs */
+.card-thumb img{max-height:140px;object-fit:contain}
+.card{transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-3px)}
